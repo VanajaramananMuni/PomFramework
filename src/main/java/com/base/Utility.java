@@ -19,7 +19,7 @@ public class Utility extends DriverManager {
 	public void constantGetting() throws IOException {
 
 		FileInputStream stream = new FileInputStream(
-				"C:\\Users\\91978\\Downloads\\Framework\\Mathangi\\src\\test\\resources\\Config.properties");
+				"C:\\Users\\91978\\eclipse-workspace\\PomFramework\\src\\test\\resources\\Confirg.properties");
 		Properties prop = new Properties();
 		prop.load(stream);
 		Constants.URL = prop.getProperty("URL");
