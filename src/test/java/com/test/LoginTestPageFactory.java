@@ -4,14 +4,14 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.base.DriverManager;
 import com.base.Utility;
 import com.pages.Login;
+import com.pages.PagefactoryLoginPages;
 
-public class LoginTestPOM extends DriverManager {
+public class LoginTestPageFactory extends DriverManager {
 
 	@BeforeClass
 	public void setUp() throws IOException {
@@ -22,14 +22,14 @@ public class LoginTestPOM extends DriverManager {
 
 		System.out.println("checkign after the new project has been created in git and checking in old repositi");
 	}
-
-	@Test
+@Test
 	public void userLoginFunctionalityTest() throws InterruptedException {
-		Login ll = new Login(driver);
-		ll.Username_Method("standard_user");
-		ll.password_Method("secret_sauce");
-		ll.submitbutton();
-		ll.facebookLink();
+
+		PagefactoryLoginPages pagefactoryobj = new PagefactoryLoginPages(driver);
+		pagefactoryobj.userName("standard_user");
+		pagefactoryobj.Password("secret_sauce");
+		pagefactoryobj.submitButton();
+
 		System.out.println("Ramaan all mass");
 	}
 
