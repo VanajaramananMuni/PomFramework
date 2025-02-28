@@ -19,6 +19,8 @@ public class LoginTestPOM extends DriverManager {
 		ulitiyloading.constantGetting();
 
 		driverInitialisation();
+
+		System.out.println("checkign after the new project has been created in git and checking in old repositi");
 	}
 
 	@Test
@@ -28,8 +30,7 @@ public class LoginTestPOM extends DriverManager {
 		ll.password_Method("secret_sauce");
 		ll.submitbutton();
 		ll.facebookLink();
-		
-		
+
 		System.out.println("Ramaan all mass");
 	}
 
