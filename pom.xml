@@ -39,10 +39,17 @@
 			<scope>test</scope>
 		</dependency>
 
-	
 
 
+
+		<dependency>
+			<groupId>cucmber</groupId>
+			<artifactId>cucmber</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
+	
+	
 	
 		
 
